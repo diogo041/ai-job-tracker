@@ -12,6 +12,15 @@ export function HomeHeader() {
           <a href="#stack">Stack</a>
           <a href="#roadmap">Roadmap</a>
         </nav>
+
+        <div className="header-actions">
+          <a href="/sign-in" className="header-link-button">
+            Sign in
+          </a>
+          <a href="/sign-up" className="header-primary-button">
+            Get started
+          </a>
+        </div>
       </div>
     </header>
   );
