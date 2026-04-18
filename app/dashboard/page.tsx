@@ -8,7 +8,7 @@ export default function DashboardPage() {
   return (
     <main className="dashboard-page">
       <div className="dashboard-layout">
-        <DashboardSidebar />
+        <DashboardSidebar activeItem="Overview" />
 
         <section className="dashboard-content">
           <DashboardTopbar />
