@@ -1028,3 +1028,146 @@ select {
     grid-template-columns: 1fr;
   }
 }
+
+.resumes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 24px 28px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.resumes-header h1 {
+  margin: 0 0 10px;
+  font-size: 36px;
+}
+
+.resumes-header-text {
+  margin: 0;
+  color: #cbd5e1;
+  line-height: 1.7;
+  max-width: 720px;
+}
+
+.resumes-header-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.resumes-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.resumes-summary-card {
+  padding: 22px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.resumes-summary-card p {
+  margin: 0 0 10px;
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+.resumes-summary-card h2 {
+  margin: 0;
+  font-size: 34px;
+}
+
+.resumes-upload-panel,
+.resumes-list-panel {
+  padding: 24px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.resumes-upload-text {
+  margin: 8px 0 0;
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+.resumes-dropzone {
+  margin-top: 20px;
+  padding: 28px;
+  border-radius: 22px;
+  border: 1px dashed rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.02);
+  display: grid;
+  gap: 12px;
+  justify-items: start;
+}
+
+.resumes-dropzone-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #4f7cff, #8a5cff);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.resumes-dropzone h3 {
+  margin: 0;
+}
+
+.resumes-dropzone p {
+  margin: 0 0 4px;
+  color: #cbd5e1;
+}
+
+.resume-status {
+  display: inline-flex;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.resume-status.active {
+  background: rgba(34, 197, 94, 0.18);
+  color: #bbf7d0;
+}
+
+.resume-status.draft {
+  background: rgba(250, 204, 21, 0.18);
+  color: #fde68a;
+}
+
+.resume-status.archived {
+  background: rgba(148, 163, 184, 0.18);
+  color: #dbe4ff;
+}
+
+@media (max-width: 1100px) {
+  .resumes-summary-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .resumes-header {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .resumes-header h1 {
+    font-size: 28px;
+  }
+
+  .resumes-summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
