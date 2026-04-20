@@ -1,12 +1,12 @@
 type DashboardSidebarProps = {
-  activeItem: "Overview" | "Applications" | "Resumes";
+  activeItem: "Overview" | "Applications" | "Resumes" | "Interviews";
 };
 
 const navItems = [
   { label: "Overview", href: "/dashboard" },
   { label: "Applications", href: "/applications" },
   { label: "Resumes", href: "/resumes" },
-  { label: "Interviews", href: "#" },
+  { label: "Interviews", href: "/interviews" },
   { label: "Analytics", href: "#" },
   { label: "Settings", href: "#" },
 ];
@@ -40,8 +40,8 @@ export function DashboardSidebar({ activeItem }: DashboardSidebarProps) {
 
       <div className="dashboard-sidebar-card">
         <p className="dashboard-sidebar-label">Next Goal</p>
-        <h3>Tailor resumes by role</h3>
-        <p>Keep multiple resume versions ready for internships, frontend, and full-stack roles.</p>
+        <h3>Prepare for upcoming interviews</h3>
+        <p>Track schedules, rounds, and notes so each interview feels organized and intentional.</p>
       </div>
     </aside>
   );
