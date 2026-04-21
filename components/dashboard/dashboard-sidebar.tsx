@@ -1,5 +1,10 @@
 type DashboardSidebarProps = {
-  activeItem: "Overview" | "Applications" | "Resumes" | "Interviews";
+  activeItem:
+    | "Overview"
+    | "Applications"
+    | "Resumes"
+    | "Interviews"
+    | "Analytics";
 };
 
 const navItems = [
@@ -7,7 +12,7 @@ const navItems = [
   { label: "Applications", href: "/applications" },
   { label: "Resumes", href: "/resumes" },
   { label: "Interviews", href: "/interviews" },
-  { label: "Analytics", href: "#" },
+  { label: "Analytics", href: "/analytics" },
   { label: "Settings", href: "#" },
 ];
 
@@ -40,8 +45,8 @@ export function DashboardSidebar({ activeItem }: DashboardSidebarProps) {
 
       <div className="dashboard-sidebar-card">
         <p className="dashboard-sidebar-label">Next Goal</p>
-        <h3>Prepare for upcoming interviews</h3>
-        <p>Track schedules, rounds, and notes so each interview feels organized and intentional.</p>
+        <h3>Turn activity into insight</h3>
+        <p>Measure application outcomes, interview progress, and response trends in one place.</p>
       </div>
     </aside>
   );
