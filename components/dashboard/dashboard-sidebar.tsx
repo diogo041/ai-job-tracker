@@ -4,7 +4,8 @@ type DashboardSidebarProps = {
     | "Applications"
     | "Resumes"
     | "Interviews"
-    | "Analytics";
+    | "Analytics"
+    | "Settings";
 };
 
 const navItems = [
@@ -13,7 +14,7 @@ const navItems = [
   { label: "Resumes", href: "/resumes" },
   { label: "Interviews", href: "/interviews" },
   { label: "Analytics", href: "/analytics" },
-  { label: "Settings", href: "#" },
+  { label: "Settings", href: "/settings" },
 ];
 
 export function DashboardSidebar({ activeItem }: DashboardSidebarProps) {
@@ -45,8 +46,8 @@ export function DashboardSidebar({ activeItem }: DashboardSidebarProps) {
 
       <div className="dashboard-sidebar-card">
         <p className="dashboard-sidebar-label">Next Goal</p>
-        <h3>Turn activity into insight</h3>
-        <p>Measure application outcomes, interview progress, and response trends in one place.</p>
+        <h3>Personalize your workflow</h3>
+        <p>Keep profile, preferences, and account settings aligned with how you track your career progress.</p>
       </div>
     </aside>
   );
