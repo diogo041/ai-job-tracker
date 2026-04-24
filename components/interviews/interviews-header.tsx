@@ -1,18 +1,13 @@
+import { PageHeader } from "../ui/page-header";
+
 export function InterviewsHeader() {
   return (
-    <section className="interviews-header">
-      <div>
-        <p className="dashboard-kicker">Interviews</p>
-        <h1>Track your interview pipeline</h1>
-        <p className="interviews-header-text">
-          Keep upcoming rounds, formats, interviewers, and preparation notes in one clear view.
-        </p>
-      </div>
-
-      <div className="interviews-header-actions">
-        <button className="dashboard-secondary-button">Export schedule</button>
-        <button className="dashboard-primary-button">+ Add interview</button>
-      </div>
-    </section>
+    <PageHeader
+      kicker="Interviews"
+      title="Track your interview pipeline"
+      description="Keep upcoming rounds, formats, interviewers, and preparation notes in one clear view."
+      secondaryActionLabel="Export schedule"
+      primaryActionLabel="+ Add interview"
+    />
   );
 }
