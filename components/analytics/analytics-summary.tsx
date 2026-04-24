@@ -1,3 +1,5 @@
+import { SummaryCardGrid } from "../ui/summary-card-grid";
+
 const summaryItems = [
   { label: "Applications Sent", value: "24" },
   { label: "Responses", value: "9" },
@@ -6,14 +8,5 @@ const summaryItems = [
 ];
 
 export function AnalyticsSummary() {
-  return (
-    <section className="analytics-summary-grid">
-      {summaryItems.map((item) => (
-        <article className="analytics-summary-card" key={item.label}>
-          <p>{item.label}</p>
-          <h2>{item.value}</h2>
-        </article>
-      ))}
-    </section>
-  );
+  return <SummaryCardGrid items={summaryItems} />;
 }
